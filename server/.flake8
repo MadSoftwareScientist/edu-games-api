@@ -1,0 +1,6 @@
+[flake8]
+exclude =
+    igrations,
+    __pycache__,
+    manage.py,
+    settings.py
