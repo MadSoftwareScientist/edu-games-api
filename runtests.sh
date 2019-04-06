@@ -1,3 +1,3 @@
 #!/bin/bash
 
-docker-compose.exe run server sh -c "python manage.py test && flask8"
+docker-compose.exe run server sh -c "python manage.py test && flake8"
