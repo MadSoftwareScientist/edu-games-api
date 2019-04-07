@@ -17,6 +17,6 @@ class AuthenticationTests(TestCase):
     def test_valid_login_success(self):
         """Login with correct credentials is successful"""
 
-        res = self.client.login(username='test', password='test123')
+        res = self.client.login(email='test@test.fi', password='test123')
 
         self.assertTrue(res)
