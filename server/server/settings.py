@@ -48,9 +48,9 @@ INSTALLED_APPS = [
     'rest_framework',
     'rest_framework.authtoken',
     'rest_auth',
-
     
     'core',
+    'games',
 ]
 
 SITE_ID = 1
