@@ -1,9 +1,9 @@
 from django.test import TestCase
-from django.conf import settings
+from django.contrib.auth import get_user_model
 
 from rest_framework.test import APIClient
 
-from models import Game
+from ..models import Game
 
 
 class ModelTests(TestCase):
@@ -17,7 +17,7 @@ class ModelTests(TestCase):
     def test_game_str(self):
         """Test that game object is created correctly"""
 
-        user = settings.AUTH_USER_MODEL.objects.get(email='test@test.fi')
+        user = get_user_model().objects.get(email='test@test.fi')
 
         game = Game.objects.create(
             name='TestGame',

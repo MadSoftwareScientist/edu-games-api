@@ -1,11 +1,13 @@
 from rest_framework import serializers
 
-from games.models import Game
+from .models import Game
 
 
-class GameSerialiazier(serializers.ModelSerializer):
+class GameSerializer(serializers.ModelSerializer):
     """Serializer for the games object"""
 
     class Meta:
         model = Game
-        fields = ('name', 'description', 'created', 'last_updated',)
+        fields = ('id', 'name', 'description', 'created_at',
+                  'updated_at', 'owner',)
+        read_only_fields = ('id', 'owner', 'created_at', 'udated_at', )
