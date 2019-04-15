@@ -11,6 +11,7 @@ def get_user_detail_url(user_id):
 
 
 class PublicUserAPITests(TestCase):
+    """Test public auth API"""
 
     fixtures = ['testusers']
 
@@ -18,7 +19,7 @@ class PublicUserAPITests(TestCase):
         self.client = APIClient()
 
     def test_retrieve_user_details(self):
-        """Test that public api can retrieve public user profile"""
+        """Test that public api cannot retrieve user profile"""
 
         res = self.client.get(get_user_detail_url(1))
 
