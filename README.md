@@ -33,8 +33,8 @@ Look build status at [Travis CI](https://travis-ci.org/MadSoftwareScientist/edu-
 TBD
 
 ## Authors
-* MadSoftwareScientist - Initial (and so far all) work
+* [MadSoftwareScientist](https://github.com/MadSoftwareScientist/) - Initial (and so far all) work
 
 ## Licence
 
-This project is lisenced under the GNU GPL v3.0 - see the LICENCE.md file for details.
+This project is lisenced under the GNU GPL v3.0 - see the [LICENCE.md](https://github.com/MadSoftwareScientist/edu-games-api/blob/master/LICENSE) file for details.
